@@ -1,0 +1,12 @@
+[
+  { "id": "flash",      "name": "Destello",       "modes": ["classic", "aram"] },
+  { "id": "ghost",      "name": "Fantasma",       "modes": ["classic", "aram"] },
+  { "id": "heal",       "name": "Curación",       "modes": ["classic", "aram"] },
+  { "id": "barrier",    "name": "Barrera",        "modes": ["classic", "aram"] },
+  { "id": "exhaust",    "name": "Extenuación",      "modes": ["classic", "aram"] },
+  { "id": "ignite",     "name": "Ignición",   "modes": ["classic", "aram"] },
+  { "id": "teleport",   "name": "Teleportación", "modes": ["classic"] },
+  { "id": "smite",      "name": "Castigo",        "modes": ["classic"] },
+  { "id": "snowball",   "name": "Marca y Desplazamiento",  "modes": ["aram"] },
+  { "id": "cleanse",    "name": "Purificación",   "modes": ["classic", "aram"] }
+]

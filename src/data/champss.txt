@@ -1,0 +1,31 @@
+{ "id": "gangplank", "name": "Gangplank", "roles": ["top", "mid"] },
+{ "id": "illaoi", "name": "Illaoi", "roles": ["top"] },
+{ "id": "kled", "name": "Kled", "roles": ["top", "mid"] },
+{ "id": "quinn", "name": "Quinn", "roles": ["top", "mid", "adc"] },
+{ "id": "tahmkench", "name": "Tahm Kench", "roles": ["top", "support"] },
+{ "id": "yorick", "name": "Yorick", "roles": ["top", "jungle"] },
+
+{ "id": "belveth", "name": "Bel'Veth", "roles": ["jungle"] },
+{ "id": "briar", "name": "Briar", "roles": ["jungle", "top"] },
+{ "id": "ivern", "name": "Ivern", "roles": ["jungle", "support"] }
+{ "id": "sejuani",   "name": "Sejuani",   "roles": ["jungle"] },
+{ "id": "shaco", "name": "Shaco", "roles": ["jungle"] },
+{ "id": "locke", "name": "Locke", "roles": ["jungle", "mid"] },
+{ "id": "trundle", "name": "Trundle", "roles": ["top", "jungle"] },
+{ "id": "udyr", "name": "Udyr", "roles": ["jungle", "top"] },
+{ "id": "zac", "name": "Zac", "roles": ["jungle", "top"] },
+
+{ "id": "anivia", "name": "Anivia", "roles": ["mid"] },
+{ "id": "azir", "name": "Azir", "roles": ["mid"] },
+{ "id": "cassiopeia", "name": "Cassiopeia", "roles": ["mid", "top"] },
+{ "id": "leblanc", "name": "LeBlanc", "roles": ["mid"] },
+{ "id": "malzahar", "name": "Malzahar", "roles": ["mid"] },
+{ "id": "naafiri", "name": "Naafiri", "roles": ["mid"] },
+{ "id": "neeko", "name": "Neeko", "roles": ["mid", "support"] },
+{ "id": "qiyana", "name": "Qiyana", "roles": ["mid", "jungle"] },
+{ "id": "xerath", "name": "Xerath", "roles": ["mid", "support"] },
+
+{ "id": "aphelios", "name": "Aphelios", "roles": ["adc"] },
+
+{ "id": "renataglasc", "name": "Renata Glasc", "roles": ["support"] },
+{ "id": "taric", "name": "Taric", "roles": ["support"] }

@@ -1,0 +1,155 @@
+{
+  "camps": [
+    {
+      "id": "gromp",
+      "name": "Gromp",
+      "firstSpawn": "0:00",
+      "respawnInterval": "1:50",
+      "goldNote": "Otorga oro y experiencia; la cantidad varía según el minuto de la partida (aprox. 135–154 de oro)"
+    },
+    {
+      "id": "wolves",
+      "name": "Lobos",
+      "firstSpawn": "0:00",
+      "respawnInterval": "1:50",
+      "goldNote": "Otorga oro y experiencia repartido entre las unidades del campamento (aprox. 148–151 de oro total)"
+    },
+    {
+      "id": "raptors",
+      "name": "Rapaces",
+      "firstSpawn": "0:00",
+      "respawnInterval": "1:50",
+      "goldNote": "Otorga oro y experiencia repartido entre las unidades del campamento (aprox. 155–170 de oro total)"
+    },
+    {
+      "id": "krugs",
+      "name": "Krugs",
+      "firstSpawn": "0:00",
+      "respawnInterval": "1:50",
+      "goldNote": "Otorga oro y experiencia repartido entre las unidades del campamento (aprox. 169–190 de oro total)"
+    },
+    {
+      "id": "blue_buff",
+      "name": "Guardián Azul",
+      "firstSpawn": "0:00",
+      "respawnInterval": "2:30",
+      "goldNote": "Otorga oro y experiencia al eliminarlo (aprox. 121–222 de oro, varía según minuto)",
+      "tiers": [
+        {
+          "name": "Guardián Azul",
+          "activeUntil": "6:00",
+          "effect": "Mejora 'Blasón de la Perspicacia' por 90s: +15 de aceleración de habilidad y regeneración de maná/energía por segundo. Si el portador muere a manos de un enemigo, el buff se transfiere a quien lo mató."
+        },
+        {
+          "name": "Guardián Azul Potenciado",
+          "activeFrom": "6:00",
+          "activeUntil": "11:00",
+          "effect": "Mismo efecto que la versión base, y además deja el buff disponible 45s para que un aliado cercano también pueda recogerlo."
+        },
+        {
+          "name": "Guardián Azul Evolucionado",
+          "activeFrom": "11:00",
+          "effect": "Mismo efecto base, pero al matarlo el buff se otorga a todos los aliados vivos."
+        }
+      ]
+    },
+    {
+      "id": "red_buff",
+      "name": "Espino Rojo",
+      "firstSpawn": "0:00",
+      "respawnInterval": "2:30",
+      "goldNote": "Otorga oro y experiencia al eliminarlo (aprox. 137–154 de oro, varía según minuto)",
+      "tiers": [
+        {
+          "name": "Espino Rojo",
+          "activeUntil": "6:00",
+          "effect": "Mejora 'Blasón de Cenizas' por 90s: cuerpo a cuerpo ralentiza 20% por 3s e inflige daño verdadero por segundo; a distancia ralentiza 6% por 3s con el mismo daño verdadero. Si el portador muere a manos de un enemigo, el buff se transfiere a quien lo mató."
+        },
+        {
+          "name": "Espino Rojo Potenciado",
+          "activeFrom": "6:00",
+          "activeUntil": "11:00",
+          "effect": "Mismo efecto base, y además un aliado cercano puede recoger el buff al matarlo."
+        },
+        {
+          "name": "Espino Rojo Evolucionado",
+          "activeFrom": "11:00",
+          "effect": "Mismo efecto base, pero al matarlo el buff se otorga a todos los aliados vivos."
+        }
+      ]
+    }
+  ],
+  "objectives": [
+    {
+      "id": "crab",
+      "name": "Cangrejo del Río",
+      "firstSpawn": "1:25",
+      "respawnInterval": "2:00",
+      "goldNote": "Oro individual, solo para quien lo elimina (103+25 la primera vez, 121+49 la segunda, varía)",
+      "effect": "Otorga visión del área. Los aliados que cruzan la zona reciben +40% de velocidad de movimiento fuera de combate por 2s."
+    },
+    {
+      "id": "herald",
+      "name": "Heraldo de la Grieta",
+      "firstSpawn": "6:00",
+      "note": "Aparece una sola vez, al mismo tiempo que el primer dragón. Si no es eliminado en los 690 segundos siguientes, desaparece y es reemplazado por el Barón Nashor.",
+      "goldNote": "Oro global para el equipo (89+37, si se elimina después del dragón)"
+    },
+    {
+      "id": "dragon",
+      "name": "Dragón Elemental",
+      "firstSpawn": "6:00",
+      "respawnInterval": "4:15",
+      "lastSpawn": "18:30",
+      "goldNote": "Oro global para el equipo (89+49 el primero, varía en los siguientes)",
+      "note": "Tras eliminar un dragón, el siguiente aparece 255 segundos después. El terreno cambia según el tipo eliminado. En la práctica el impacto del buff individual es marginal; su relevancia real es el oro de equipo y el progreso hacia el Alma de Dragón.",
+      "types": [
+        {
+          "name": "Infernal (fuego)",
+          "effect": "+3% de AP y AD"
+        },
+        {
+          "name": "Oceánico",
+          "effect": "Regenera 2% de la vida faltante cada 5 segundos"
+        },
+        {
+          "name": "Montaña",
+          "effect": "+3% de armadura y +2% de resistencia mágica (aprox.)"
+        }
+      ]
+    },
+    {
+      "id": "dragon_soul",
+      "name": "Alma de Dragón",
+      "note": "Se obtiene al derrotar los 3 dragones elementales. El buff otorgado depende del primer tipo de dragón eliminado por ese equipo.",
+      "effects": [
+        {
+          "soul": "Fuego",
+          "effect": "Ataques y habilidades que impactan a un enemigo provocan una explosión con daño adaptable (135 + 25% AD adicional + 12.5% AP), 5s de enfriamiento"
+        },
+        {
+          "soul": "Montaña",
+          "effect": "Tras 5s sin recibir daño, obtienes un escudo que absorbe 260 de daño"
+        },
+        {
+          "soul": "Océano",
+          "effect": "Restauras vida (190 + 36% AD adicional + 18% AP + 7.5% de vida adicional) en los 4s tras impactar a un enemigo, 6s de enfriamiento"
+        }
+      ]
+    },
+    {
+      "id": "elder_dragon",
+      "name": "Dragón Ancestral",
+      "firstSpawn": "19:00",
+      "respawnInterval": "4:30",
+      "note": "Reemplaza a los dragones elementales tras el minuto 18:30. Al ser derrotado, reaparece cada 270 segundos.",
+      "effect": "Inflige 150 de daño verdadero por segundo durante 3s al golpear a un enemigo. Si el enemigo tiene menos de 15% de vida, puede ser ejecutado. El buff dura 120 segundos."
+    },
+    {
+      "id": "baron",
+      "name": "Barón Nashor",
+      "note": "Reemplaza al Heraldo tras el minuto 6 si este desaparece sin ser eliminado.",
+      "effect": "Otorga la mejora 'Mano del Barón' por 120s a todo el equipo: +AD, +AP, +armadura, +resistencia mágica, reduce el tiempo de retirada en 3s, y potencia a los súbditos cercanos a aliados."
+    }
+  ]
+}

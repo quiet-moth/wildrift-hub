@@ -1,0 +1,7 @@
+[
+  { "id": "top", "name": "Top" },
+  { "id": "jungle", "name": "Jungla" },
+  { "id": "mid", "name": "Mid" },
+  { "id": "adc", "name": "ADC" },
+  { "id": "support", "name": "Support" }
+]

@@ -1,0 +1,217 @@
+:root {
+  /* Colores */
+  --color-bg: #0A0E14;
+  --color-bg-panel: #1E2328;
+  --color-bg-panel-alt: #161B21;
+  --color-gold: #C89B3C;
+  --color-gold-bright: #F0E6D2;
+  --color-teal: #0AC8B9;
+  --color-text: #ECE8DD;
+  --color-text-muted: #A09B8C;
+  --color-border: #3C3C41;
+  --color-danger: #E84057;
+
+  /* Tipografía */
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Rajdhani', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+html, body {
+  height: 100%;
+}
+#app {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--color-gold-bright);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.15em; }
+
+p {
+  color: var(--color-text-muted);
+}
+
+a {
+  color: var(--color-teal);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2em 0;
+}
+
+/* ---------- Panel Hextech (el elemento firma del sitio) ---------- */
+.hex-panel {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-gold);
+  padding: 1.5em;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  clip-path: polygon(
+    16px 0, 100% 0, 100% calc(100% - 16px),
+    calc(100% - 16px) 100%, 0 100%, 0 16px
+  );
+}
+
+.hex-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: var(--color-teal);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  opacity: 0.85;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+textarea,
+select {
+  background: var(--color-bg-panel-alt);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1em;
+  padding: 0.5em 0.7em;
+  border-radius: 3px;
+  transition: border-color 0.15s;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-teal);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-gold);
+}
+
+label {
+  font-family: var(--font-body);
+  color: var(--color-text-muted);
+  font-size: 0.95em;
+}
+
+/* ---------- Botones ---------- */
+button {
+  background: transparent;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold-bright);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95em;
+  letter-spacing: 0.03em;
+  padding: 0.5em 1.1em;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+button:hover {
+  background: var(--color-gold);
+  color: var(--color-bg);
+}
+
+button.remove-btn,
+button.danger {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+button.remove-btn:hover,
+button.danger:hover {
+  background: var(--color-danger);
+  color: var(--color-bg);
+}
+
+/* ---------- Tablas ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg-panel);
+}
+
+th {
+  background: var(--color-bg-panel-alt);
+  color: var(--color-gold-bright);
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 0.7em 0.9em;
+  border-bottom: 2px solid var(--color-gold);
+}
+
+td {
+  padding: 0.6em 0.9em;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.92em;
+}
+
+tr:hover td {
+  background: rgba(200, 155, 60, 0.06);
+}
+
+/* ---------- Layout reutilizable: filas de filtros/controles ---------- */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-bottom: 1.2em;
+  padding: 1em;
+  background: var(--color-bg-panel-alt);
+  border-left: 3px solid var(--color-gold);
+}
+
+/* ---------- Resultado de un sorteo/acción ---------- */
+.result {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-teal);
+  padding: 1.2em 1.5em;
+  margin-bottom: 1.5em;
+}
+.result h2 {
+  color: var(--color-teal);
+  margin-bottom: 0.3em;
+}
+
+.no-result {
+  color: var(--color-danger);
+  font-style: italic;
+}

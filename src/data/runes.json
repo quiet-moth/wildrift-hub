@@ -1,0 +1,107 @@
+{
+  "keystones": [
+    { "id": "electrocute", "name": "Electrocutar" },
+    { "id": "darkharvest", "name": "Cosecha Oscura" },
+    { "id": "hail_of_blades", "name": "Potenciación" },
+    { "id": "lethal_tempo", "name": "Cadencia Letal" },
+    { "id": "fleet_footwork", "name": "Sobre la Marcha" },
+    { "id": "conqueror", "name": "Conquistador" },
+    { "id": "grasp", "name": "Agarre del Perpetuo" },
+    { "id": "guardian", "name": "Guardián" },
+    { "id": "aery", "name": "Aery" },
+    { "id": "comet", "name": "Cometa Arcano" },
+    { "id": "phase_rush", "name": "Fase Veloz" },
+    { "id": "first_strike", "name": "Primer Golpe" },
+    { "id": "glacial_augment", "name": "Soberano del Hielo" }
+  ],
+  "trees": [
+    {
+      "id": "domination",
+      "name": "Dominación",
+      "slots": [
+        [
+          { "id": "cheap_shot", "name": "Golpe Bajo" },
+          { "id": "sudden_impact", "name": "Impacto Súbito" },
+          { "id": "empowered_attack", "name": "Ataque Potenciado" }
+        ],
+        [
+          { "id": "chain_attack", "name": "Ataque en Cadena" },
+          { "id": "tyranny", "name": "Tirano" },
+          { "id": "hubris", "name": "Arrogancia" }
+        ],
+        [
+          { "id": "eyeball_collection", "name": "Colección de Ojos" },
+          { "id": "ingenious_hunter", "name": "Cazador Ingenioso" },
+          { "id": "relentless_hunter", "name": "Cazador Implacable" },
+          { "id": "zombie_ward", "name": "Centinela Zombi" }
+        ]
+      ]
+    },
+    {
+      "id": "precision",
+      "name": "Precisión",
+      "slots": [
+        [
+          { "id": "brutal", "name": "Brutalidad" },
+          { "id": "triumph", "name": "Triunfo" },
+          { "id": "fervor_combat", "name": "Fervor de Combate" }
+        ],
+        [
+          { "id": "last_stand", "name": "Último Bastión" },
+          { "id": "cut_down", "name": "Corte" },
+          { "id": "coup_de_grace", "name": "Golpe de Gracia" }
+        ],
+        [
+          { "id": "legend_alacrity", "name": "Leyenda: Celeridad" },
+          { "id": "legend_haste", "name": "Leyenda: Aceleración" },
+          { "id": "legend_bloodline", "name": "Leyenda: Linaje" }
+        ]
+      ]
+    },
+    {
+      "id": "resolve",
+      "name": "Valor",
+      "slots": [
+        [
+          { "id": "demolish", "name": "Demolición" },
+          { "id": "font_of_life", "name": "Fuente de Vida" },
+          { "id": "shield_bash", "name": "Valor del Coloso" },
+          { "id": "unflinching", "name": "Inquebrantable" }
+        ],
+        [
+          { "id": "second_wind", "name": "Segundo Aire" },
+          { "id": "nullifying_orb", "name": "Orbe de Anulación" },
+          { "id": "bone_plating", "name": "Coraza Ósea" }
+        ],
+        [
+          { "id": "overgrowth", "name": "Crecimiento Excesivo" },
+          { "id": "revitalize", "name": "Revitalizar" },
+          { "id": "unyielding", "name": "Perseverancia" }
+        ]
+      ]
+    },
+    {
+      "id": "sorcery",
+      "name": "Brujería",
+      "slots": [
+        [
+          { "id": "axiom_arcanist", "name": "Arcanista Axiomático" },
+          { "id": "manaflow_band", "name": "Anillo de Flujo de Maná" },
+          { "id": "nimbus_botanist", "name": "Botanista" },
+          { "id": "hextech_flashtraption", "name": "Hexdestello" }
+        ],
+        [
+          { "id": "transcendence", "name": "Trascendencia" },
+          { "id": "celerity", "name": "Celeridad" },
+          { "id": "absolute_focus", "name": "Concentración Absoluta" }
+        ],
+        [
+          { "id": "scorch", "name": "Quemadura" },
+          { "id": "nimbus_cloak", "name": "Capa del Nimbo" },
+          { "id": "gathering_storm", "name": "Tormenta Creciente" },
+          { "id": "waterwalking", "name": "Vasija Ixtalí" }
+        ]
+      ]
+    }
+  ]
+}
